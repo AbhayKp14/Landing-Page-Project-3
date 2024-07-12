@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(1, 9, 14);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main img{
+    height: 650px;
+    width: 500px;
+    position: relative;
+    z-index: 99;
+    object-fit: cover;
+}
+#scroll{
+    position: absolute;
+    top: 24%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll::-webkit-scrollbar{
+    display: none;
+}
+#scroll h1{
+    display: inline-block;
+    font-size: 160px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    font-family: monument;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: white;
+}
+#scroll2{
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    z-index: 100;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll2::-webkit-scrollbar{
+    display: none;
+}
+#scroll2 h1{
+    display: inline-block;
+    font-size: 160px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    color: transparent;
+    font-family: monument;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: white;
+}
+#scroll3{
+    position: absolute;
+    top: 64%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll3::-webkit-scrollbar{
+    display: none;
+}
+#scroll3 h1{
+    display: inline-block;
+    font-size: 160px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    font-family: monument;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    color: white;
+}
+#text{
+    font-size: 35px;
+    position: absolute;
+    font-family: monument;
+    width: 60%;
+    z-index: 999;
+    top: 7%;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(calc(-100% - 32px));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
