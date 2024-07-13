@@ -120,3 +120,56 @@ html,body{
         transform: translateX(0);
     }
 }
+@media (max-width:500px) {
+    #main img{
+        height: 500px;
+        width: 400px;
+    }
+    #text{
+            font-size: 20px;
+            width: 102%;
+            top: 15%;
+        }
+    #scroll h1{
+            display: inline-block;
+            font-size: 130px;
+            text-transform: uppercase;
+            margin-right: 25px;
+            letter-spacing: 3px;
+            animation-name: scroll;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            color: white;
+        }
+        #scroll2 h1{
+            display: inline-block;
+            font-size: 130px;
+            text-transform: uppercase;
+            margin-right: 25px;
+            letter-spacing: 3px;
+            color: transparent;
+            font-family: monument;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #000;
+            animation-name: scroll;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            color: white;
+        }
+        #scroll3 h1{
+            display: inline-block;
+            font-size: 130px;
+            text-transform: uppercase;
+            margin-right: 25px;
+            letter-spacing: 3px;
+            font-family: monument;
+            animation-name: scroll;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            color: white;
+        }
+}
